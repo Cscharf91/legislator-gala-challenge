@@ -28,8 +28,8 @@ const seatingPlanner = (
     mappedGuests
   );
 
-  const initialScore = costReducer(preferenceScoresPerTable);
-  console.log(`initialScore`, initialScore);
+  const initialCost = costReducer(preferenceScoresPerTable);
+  console.log("initialCost:", initialCost);
 
   const { currentCost: finalCost, currentGuests: optimizedGuests } = anneal(
     mappedGuests,

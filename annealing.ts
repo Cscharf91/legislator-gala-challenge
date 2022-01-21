@@ -73,11 +73,6 @@ const findNeighbor = (currentGuests: MappedGuests[]): MappedGuests[] => {
 
   unset(newTable1, randomGuest1);
   unset(newTable2, randomGuest2);
-  // delete newTable1[randomGuest1];
-  // delete newTable2[randomGuest2];
-
-  newGuests[randomIndex1] = newTable1;
-  newGuests[randomIndex2] = newTable2;
 
   return newGuests.map((table, index) => {
     if (index === randomIndex1) {
