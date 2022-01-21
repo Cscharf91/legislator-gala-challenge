@@ -19,6 +19,12 @@ Basic steps to the algorithm:
 5. Iterate through x iterations (x = 100 here), then decrease the temperature.
 6. Return the current solution and cost.
 
+Here are a couple things I wish I had more time to improve:
+
+1. As mentioned, limited testing, in both unit testing and in a more robust test generator, which would allow for more variety in `preferences` and `numTables`.
+2. Improvement in a case where there are far more tables than guests (with this algorithm, everyone will sit alone).
+3. Doesn't take advantage of the following rule: "you may assume that the number of seats per table are flexible..." This is becuase simulated annealing swaps 2 people evenly each iteration, although I wonder if incorporating occasional 1-way moves would improve the result.
+
 ### Get Started
 
 To run this, npm and ts-node are required.
