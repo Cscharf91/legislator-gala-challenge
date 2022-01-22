@@ -35,7 +35,7 @@ To install ts-node:
 npm install -g ts-node
 ```
 
-To install node_modules:potentially
+To install node_modules:
 
 ```
 npm install
